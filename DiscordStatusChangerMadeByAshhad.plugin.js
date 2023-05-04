@@ -275,7 +275,7 @@ const Status = {
 		let json = JSON.parse(req.response);
 		for (const s of ["errors", "custom_status", "text", "_errors", 0, "message"])
 			if ((json == undefined) || ((json = json[s]) == undefined))
-				return "Unknown error. Please report at github.com/toluschr/BetterDiscord-Animated-Status";
+				return "Unknown error. Please report at github.com/Ashhad776/Discord-Status-Changer-Plugin";
 
 		return json;
 	},
